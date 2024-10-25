@@ -1,0 +1,167 @@
+/* HEADER PRINCIPAL */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+/*.header:hover {
+  background-color: #222;
+}*/
+
+/* Logo animé */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo-image:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+/* Menu de navigation */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a {
+  margin: 0 20px;
+  color: #070707;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+/*.nav-menu a:hover {
+  color: #f0a500;
+}*/
+
+.nav-menu a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #f0a500;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* Section compte utilisateur */
+.account {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #f0a500;
+  color: #333;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.account:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+.account a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.account-text {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Menu mobile */
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: #333;
+  width: 80%; /* Ajuste la largeur du menu (80% de l'écran) */
+  height: auto; /* Au lieu de prendre toute la hauteur, on ajuste selon le contenu */
+  padding: 20px; /* Ajout de padding pour espacer les liens */
+  border-radius: 0 0 15px 15px; /* Arrondi des coins pour un effet visuel plus doux */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour donner du relief */
+  align-items: center;
+  justify-content: flex-start; /* Le contenu commence en haut */
+  z-index: 999; /* S'assurer que le menu reste au-dessus des autres éléments */
+}
+
+.nav-menu.active a {
+  margin: 15px 0; /* Réduit l'espace entre les liens */
+  font-size: 20px; /* Ajuste la taille des liens */
+}
+
+.burger-icon {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Transition douce pour l'apparition/disparition du menu */
+.nav-menu {
+  transition: all 0.3s ease;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Masquer le menu par défaut */
+  }
+
+  .burger-icon {
+    display: block; /* Afficher le bouton burger */
+  }
+
+  .account {
+    display: none; /* Optionnel: Cacher la section mon compte sur mobile */
+  }
+
+  .nav-menu.active {
+    display: flex; /* Afficher le menu lors du clic sur le bouton burger */
+  }
+}

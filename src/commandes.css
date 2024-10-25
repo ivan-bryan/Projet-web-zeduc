@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Gestion{
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  font-size: 24px;
+  margin-right: 16px;
+  background: none;
+  border: none;
+  color: #F4C419;
+  cursor: pointer;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F4C419;
+}
+
+.nav-links a {
+  color: black;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.account-points {
+  display: flex;
+  align-items: center;
+}
+
+.points {
+  background-color: yellow;
+  color: black;
+  padding: 4px 12px;
+  border-radius: 16px;
+  margin-right: 8px;
+}
+
+.account-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.account-btn:hover {
+  background-color: rgb(136, 97, 53);
+}
+
+.sous-menu{
+  display: flex;
+  background-color: black;
+  padding: 18px 12px;
+  margin: 0;
+}
+
+.nav-pts a{
+  color:white;
+  margin: 0 12px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 30px; /* Ajoute de l'espace pour le cercle */
+  margin-bottom: 15px;
+  
+}
+
+.pts-btn{
+  background-color: orange;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.logout button {
+
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+.reclam{
+  display: flex;
+justify-content: flex-start;
+}
+
+.content {
+  padding: 20px;
+}
+
+.orders {
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button.validate {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.cancel {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+button.finish {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.voir-plus {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  text-align: right;
+  color: orange;
+  margin: 0 12px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-info{
+  text-align: center;
+}
+.footer-contact {
+  text-align: left;
+  display: flex;
+  color: orange;
+  margin: 0;
+  padding: 0;
+}
